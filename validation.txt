@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.terna.login.MainActivity"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Registration"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        android:gravity="center"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@id/name"
+        android:hint="Enter Name"
+        android:layout_below="@id/textview"
+        android:textColorHint="@android:color/black"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:inputType="text"
+        app:met_baseColor="@android:color/black"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="@android:color/black"
+        app:met_singleLineEllipsis="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@id/email"
+        android:hint="Enter EmailID"
+        android:layout_below="@id/name"
+        android:textColorHint="@android:color/black"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:inputType="textEmailAddress"
+        app:met_baseColor="@android:color/black"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="@android:color/black"
+        app:met_singleLineEllipsis="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@id/pwd"
+        android:hint="Enter Password"
+        android:layout_below="@id/email"
+        android:textColorHint="@android:color/black"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:inputType="textPassword"
+        app:met_baseColor="@android:color/black"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="@android:color/black"
+        app:met_singleLineEllipsis="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@id/phone"
+        android:hint="Enter Phone"
+        android:layout_below="@id/pwd"
+        android:textColorHint="@android:color/black"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:inputType="number"
+        app:met_baseColor="@android:color/black"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="@android:color/black"
+        app:met_singleLineEllipsis="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <info.hoang8f.widget.FButton
+        android:id="@id/btn"
+        android:textColor="@android:color/white"
+        android:text="Sign Up"
+            android:textSize="30dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:shadowColor="@android:color/black"
+        app:shadowEnabled="true"
+        app:shadowHeight="5dp"
+        app:cornerRadius="4dp"/>
+
+
+</RelativeLayout>
+
